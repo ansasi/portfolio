@@ -3,6 +3,7 @@ import docker from "../assets/skills/cloud/docker.png";
 import firebase from "../assets/skills/cloud/firebase.png";
 import gitlab from "../assets/skills/cloud/gitlab.png";
 import linux from "../assets/skills/cloud/linux.webp";
+import kubernetes from "../assets/skills/cloud/kubernetes.png";
 import terraform from "../assets/skills/cloud/terraform.png";
 import css from "../assets/skills/frontend/css.png";
 import html from "../assets/skills/frontend/html.png";
@@ -45,6 +46,7 @@ export default {
   firebase,
   gitlab,
   linux,
+  kubernetes,
   terraform,
   css,
   html,

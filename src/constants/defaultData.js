@@ -147,6 +147,12 @@ export const SkillsData = [
     icon: images.linux,
   },
   {
+    name: "Kubernetes",
+    level: "Intermediate",
+    type: "cloud, other",
+    icon: images.kubernetes,
+  },
+  {
     name: "Terraform",
     level: "Professional",
     type: "cloud, other",
