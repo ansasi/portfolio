@@ -1,0 +1,36 @@
+.app__floatingnavbar-icon-links {
+  background: rgba(26, 89, 157, 0.3);
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 1rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+
+  a {
+    // background: transparent;
+    padding: 0.7rem;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    display: flex;
+
+    &:hover {
+      background: var(--gray-color);
+    }
+    &.active {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 3rem;
+    }
+    @media screen and (min-width: 450px) {
+      font-size: 1.6rem;
+      padding: 1rem;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    display: none;
+  }
+}
