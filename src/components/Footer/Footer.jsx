@@ -46,7 +46,7 @@ const Footer = () => {
       </div>
 
       <div className="app__footer-copyright">
-        <p>&copy;2022 Ansasi</p>
+        <p>&copy;2022 Angel Sanchez</p>
         <p>All rights reserved</p>
       </div>
     </motion.div>
