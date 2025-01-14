@@ -59,16 +59,16 @@ const Contact = () => {
       <div className="app__contact-cards">
         <div className="app__contact-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:angelsanchezsierra98@gmail.com" className="p-text">
-            angelsanchezsierra98@gmail.com
+          <a href="mailto:angel.sanchez.sierra@proton.me" className="p-text">
+            angel.sanchez.sierra@proton.me
           </a>
         </div>
-        <div className="app__contact-card">
+        {/* <div className="app__contact-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+34 686 60 34 21" className="p-text">
-            +34 686 60 34 21
+          <a href="tel:+34 ...." className="p-text">
+            +34 ....
           </a>
-        </div>
+        </div> */}
       </div>
       {!isFormSubmitted ? (
         <form className="app__contact-form app__flex" ref={form}>

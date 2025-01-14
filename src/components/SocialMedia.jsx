@@ -10,7 +10,7 @@ const SocialMedia = () => (
     <a href="https://github.com/ansasi" target="_blank" rel="noreferrer">
       <FaGithub />
     </a>
-    <a href="mailto:angelsanchezsierra98@gmail.com">
+    <a href="mailto:angel.sanchez.sierra@proton.me">
       <FiMail />
     </a>
   </div>
