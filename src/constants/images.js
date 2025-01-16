@@ -34,7 +34,7 @@ import ecommerce from "../assets/portfolio/ecommerce.jpg";
 import open_ai from "../assets/portfolio/openai_chat.jpg";
 
 import tools from "../assets/tools.jfif";
-import profileAnsasiNoBg from "../assets/profile_ansasi_no_bg.png";
+import profileAnsasiBg from "../assets/profile_ansasi_bg.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
@@ -68,7 +68,7 @@ export default {
   circle,
   logo,
   amazon,
-  profileAnsasiNoBg,
+  profileAnsasiBg,
   tools,
   sheetgenius,
   event_app,
