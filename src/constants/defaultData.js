@@ -112,7 +112,16 @@ export const PortfolioData = [
     projectLink: "https://open-ai-vanilla.vercel.app/",
     image: images.open_ai,
     tags: ["AI", "Chatbot", "Web App", "Vanilla JS", "Open AI"],
-  }
+  },
+  {
+    title: "Core Construcciones Website",
+    description:
+      "A website for a construction company. It uses React JS and Vite.",
+    codeLink: "https://github.com/ansasi/core_construcciones",
+    projectLink: "https://ansasi.github.io/core_construcciones/",
+    image: images.core_construcciones,
+    tags: ["Mobile App", "Web App", "React JS", "Vite"],
+  },
 ];
 
 export const SkillsData = [
