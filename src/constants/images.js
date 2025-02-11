@@ -35,7 +35,7 @@ import open_ai from "../assets/portfolio/openai_chat.jpg";
 import core_construcciones from "../assets/portfolio/core_construcciones.png";
 
 import tools from "../assets/tools.jfif";
-import profileAnsasiBg from "../assets/profile_ansasi_bg.png";
+import profileAnsasiBg from "../assets/profile_ansasi_bg.jpg";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
