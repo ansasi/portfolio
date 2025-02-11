@@ -108,11 +108,20 @@ export const PortfolioData = [
     title: "Open AI Chat",
     description:
     '"A GPT-3-powered chatbot developed for my personal portfolio, showcasing my skills in creating conversational AI that can handle a wide range of queries and integrate with multiple platforms." Description provided by this AI.',
-    codeLink: "https://open-ai-vanilla.vercel.app/",
-    projectLink: "https://github.com/ansasi/open_ai_vanilla",
+    codeLink: "https://github.com/ansasi/open_ai_vanilla",
+    projectLink: "https://open-ai-vanilla.vercel.app/",
     image: images.open_ai,
     tags: ["AI", "Chatbot", "Web App", "Vanilla JS", "Open AI"],
-  }
+  },
+  {
+    title: "Core Construcciones Website",
+    description:
+      "A website for a construction company. It uses React JS and Vite.",
+    codeLink: "https://github.com/ansasi/core_construcciones",
+    projectLink: "https://ansasi.github.io/core_construcciones/",
+    image: images.core_construcciones,
+    tags: ["Mobile App", "Web App", "React JS", "Vite"],
+  },
 ];
 
 export const SkillsData = [

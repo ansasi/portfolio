@@ -32,9 +32,10 @@ import gym from "../assets/portfolio/gym.jpg";
 import social_media from "../assets/portfolio/social_media.jpg";
 import ecommerce from "../assets/portfolio/ecommerce.jpg";
 import open_ai from "../assets/portfolio/openai_chat.jpg";
+import core_construcciones from "../assets/portfolio/core_construcciones.jpg";
 
 import tools from "../assets/tools.jfif";
-import profileAnsasiBg from "../assets/profile_ansasi_bg.png";
+import profileAnsasiBg from "../assets/profile_ansasi_bg.jpg";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
 
@@ -76,4 +77,5 @@ export default {
   social_media,
   ecommerce,
   open_ai,
+  core_construcciones,
 };
