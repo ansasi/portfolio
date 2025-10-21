@@ -21,16 +21,16 @@
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.26.0",
+    "@eslint/js": "9.26.0",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.4.0",
-    "eslint": "^9.26.0",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.23",
-    "globals": "^15.10.0",
-    "sass-embedded": "^1.87.0",
-    "vite": "^5.4.18"
+    "@vitejs/plugin-react": "4.4.0",
+    "eslint": "9.26.0",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "globals": "15.15.0",
+    "sass-embedded": "1.87.0",
+    "vite": "5.4.21"
   }
 }
