@@ -109,7 +109,7 @@ export const PortfolioData = [
     description:
     '"A GPT-3-powered chatbot developed for my personal portfolio, showcasing my skills in creating conversational AI that can handle a wide range of queries and integrate with multiple platforms." Description provided by this AI.',
     codeLink: "https://github.com/ansasi/open_ai_vanilla",
-    projectLink: "https://open-ai-vanilla.vercel.app/",
+    // projectLink: "https://open-ai-vanilla.vercel.app/",
     image: images.open_ai,
     tags: ["AI", "Chatbot", "Web App", "Vanilla JS", "Open AI"],
   },
