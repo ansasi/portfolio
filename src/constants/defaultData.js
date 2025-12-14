@@ -64,7 +64,7 @@ export const PortfolioData = [
     description:
       "SheetGenius AI is a web app that creates Excel formulas using natural language.",
     codeLink: "https://github.com/ansasi/sheetgenius",
-    projectLink: "https://sheetgenius.ai/",
+    projectLink: "https://sheetgenius.vercel.app/",
     image: images.sheetgenius,
     tags: ["AI", "Mobile App", "Web App", "Next JS", "React JS", "Stripe"],
   },
