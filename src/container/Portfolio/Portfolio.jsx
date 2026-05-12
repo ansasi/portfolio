@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
@@ -7,15 +7,9 @@ import "./Portfolio.scss";
 import { PortfolioData } from "../../constants/defaultData";
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
-  const [filterProject, setFilterProject] = useState([]);
+  const [filterProject, setFilterProject] = useState(PortfolioData);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-
-  useEffect(() => {
-    setProjects(PortfolioData);
-    setFilterProject(PortfolioData);
-  }, []);
 
   const handleProjectFilter = (item) => {
     setActiveFilter(item);
@@ -25,9 +19,9 @@ const Portfolio = () => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === "All") {
-        setFilterProject(projects);
+        setFilterProject(PortfolioData);
       } else {
-        setFilterProject(projects.filter((project) => project.tags.includes(item)));
+        setFilterProject(PortfolioData.filter((project) => project.tags.includes(item)));
       }
     }, 500);
   };

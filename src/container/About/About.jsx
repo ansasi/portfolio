@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -6,12 +5,6 @@ import "./About.scss";
 import { AboutData, Settings } from "../../constants/defaultData";
 
 const About = () => {
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    setAbouts(AboutData);
-  }, []);
-
   return (
     <>
       <h2 className="head-text">
@@ -24,7 +17,7 @@ const About = () => {
       </p>
 
       <div className="app__profiles">
-        {abouts.map((about, index) => (
+        {AboutData.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}

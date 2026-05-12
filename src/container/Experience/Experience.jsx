@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { MdWorkOutline } from "react-icons/md";
 import { FaAmazon, FaMountain } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
@@ -11,12 +10,6 @@ import "./Experience.scss";
 import { ExperienceData } from "../../constants/defaultData";
 
 const Experience = () => {
-  const [experiences, setExperiences] = useState([]);
-
-  useEffect(() => {
-    setExperiences(ExperienceData);
-  }, []);
-
   const getIcon = (company) => {
     switch (company) {
       case "Amazon":
@@ -37,7 +30,7 @@ const Experience = () => {
       </h2>
       <br />
       <VerticalTimeline>
-        {experiences.map((experience, index) => (
+        {ExperienceData.map((experience, index) => (
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
