@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 .env
+
+# skills.sh CLI mirrors installed skills here; .claude/skills/ is the
+# copy Claude Code actually reads, so .agents/ is redundant in this repo.
+.agents/
