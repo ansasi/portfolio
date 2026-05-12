@@ -17,6 +17,9 @@ const skillsByType = (type) =>
       skill.type.toLowerCase().includes(type) || skill.type.toLowerCase().includes("all")
   );
 
+const levelClass = (level = "") =>
+  `level-${level.toLowerCase().replace(/[^a-z]/g, "") || "intermediate"}`;
+
 /* eslint-disable react/prop-types */
 const SkillCard = ({ skill }) => (
   <motion.div
@@ -35,7 +38,9 @@ const SkillCard = ({ skill }) => (
       />
     </div>
     <p className="app__skills-skill-name">{skill.name}</p>
-    <p className="app__skills-skill-level">{skill.level}</p>
+    <p className={`app__skills-skill-level ${levelClass(skill.level)}`}>
+      {skill.level}
+    </p>
   </motion.div>
 );
 /* eslint-enable react/prop-types */

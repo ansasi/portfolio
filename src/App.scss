@@ -32,8 +32,13 @@
   flex-direction: column;
   padding: 4rem 2rem;
 
+  /* Leave room under the floating mobile navbar so it never overlaps content */
+  @media screen and (max-width: 900px) {
+    padding-bottom: 6rem;
+  }
+
   @media screen and (max-width: 600px) {
-    padding: 4rem 1rem 2rem;
+    padding: 4rem 1rem 6rem;
   }
 }
 
@@ -53,21 +58,49 @@
 }
 
 .head-text {
-  font-size: clamp(2rem, 1.4rem + 2.4vw, 2.75rem);
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 1.4rem + 2.8vw, 3.25rem);
+  font-weight: 700;
   text-align: center;
   color: var(--black-color);
-  letter-spacing: -0.02em;
-  line-height: 1.15;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
   text-wrap: balance;
 
   span {
-    color: var(--secondary-color);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   @media screen and (min-width: 2000px) {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--secondary-color);
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: var(--secondary-color-soft);
+  border: 1px solid rgba(49, 59, 172, 0.18);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  box-shadow: 0 0 0 4px rgba(49, 59, 172, 0.18);
 }
 
 .p-text {

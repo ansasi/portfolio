@@ -67,7 +67,7 @@ const Portfolio = () => {
         ) : (
           filterProject.map((project) => (
             <article className="app__portfolio-item" key={project.title}>
-              <div className="app__portfolio-img app__flex">
+              <div className="app__portfolio-img">
                 <img
                   src={project.image}
                   alt={`${project.title} screenshot`}
@@ -75,6 +75,7 @@ const Portfolio = () => {
                   width="640"
                   height="360"
                 />
+                <span className="app__portfolio-tag">{project.tags[0]}</span>
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
                   transition={{ duration: 0.25, ease: "easeInOut", staggerChildren: 0.5 }}
@@ -117,15 +118,9 @@ const Portfolio = () => {
                 </motion.div>
               </div>
 
-              <div className="app__portfolio-content app__flex">
-                <h3 className="bold-text">{project.title}</h3>
-                <p className="p-text" style={{ marginTop: 10 }}>
-                  {project.description}
-                </p>
-
-                <div className="app__portfolio-tag app__flex">
-                  <p className="p-text">{project.tags[0]}</p>
-                </div>
+              <div className="app__portfolio-content">
+                <h3 className="app__portfolio-title">{project.title}</h3>
+                <p className="p-text app__portfolio-desc">{project.description}</p>
               </div>
             </article>
           ))

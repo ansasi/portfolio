@@ -23,19 +23,20 @@ const About = () => {
             className="app__profile-item"
             key={about.title}
           >
-            <img
-              src={about.image}
-              alt={about.title}
-              loading="lazy"
-              width="320"
-              height="170"
-            />
-            <h3 className="bold-text" style={{ marginTop: 20 }}>
-              {about.title}
-            </h3>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {about.description}
-            </p>
+            <div className="app__profile-media">
+              <img
+                src={about.image}
+                alt={about.title}
+                loading="lazy"
+                width="320"
+                height="170"
+              />
+              <span className="app__profile-index" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+            </div>
+            <h3 className="app__profile-title">{about.title}</h3>
+            <p className="app__profile-desc p-text">{about.description}</p>
           </motion.article>
         ))}
       </div>
