@@ -4,6 +4,8 @@ import { FaGithub } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
+import { Settings } from "../../constants/defaultData";
+
 const Footer = () => {
   return (
     <motion.div
@@ -12,7 +14,7 @@ const Footer = () => {
       className="app__footer">
 
       <a href="#home" className="app__footer-logo">
-        Angel Sanchez
+        {Settings.fullName}
       </a>
 
       <ul className="app__footer-links">
@@ -37,16 +39,16 @@ const Footer = () => {
       </ul>
 
       <div className="app__footer-socials">
-        <a href="https://www.linkedin.com/in/angelsanchezsierra" target="_blank" rel="noreferrer">
+        <a href={Settings.linkedin} target="_blank" rel="noreferrer">
           <BsLinkedin />
         </a>
-        <a href="https://github.com/ansasi" target="_blank" rel="noreferrer">
+        <a href={Settings.github} target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
       </div>
 
       <div className="app__footer-copyright">
-        <p>&copy;2022 Angel Sanchez</p>
+        <p>&copy;{new Date().getFullYear()} {Settings.fullName}</p>
         <p>All rights reserved</p>
       </div>
     </motion.div>

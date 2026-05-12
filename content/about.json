@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "Profile",
+      "description": "Cloud Data Engineer with a double master's degree in Industrial Engineering and Smart Industry. That mix gave me strong adaptability and problem-solving instincts, and a passion for Big Data, the Cloud and the Web.",
+      "image": "about02"
+    },
+    {
+      "title": "Technologies and tools",
+      "description": "My main field is cloud and data. From there I've branched into web development, CI/CD pipelines, infrastructure as code (Terraform) and self-hosted Docker setups for my HomeLab. AWS, Python and Terraform are my daily drivers.",
+      "image": "tools"
+    },
+    {
+      "title": "Background",
+      "description": "I've shipped work as a Cloud Data Engineer, Data Engineer, Data Scientist and Fullstack Developer. SQL data models, cloud architectures, ETL pipelines, full-stack web apps and AI-powered tooling are all part of my track record.",
+      "image": "about04"
+    },
+    {
+      "title": "Awards and Achievements",
+      "description": "AWS Certified Solutions Architect, AWS Certified Cloud Practitioner and winner of the IV Hackathon in collaboration with Prosegur and ICAI.",
+      "image": "about03"
+    }
+  ]
+}

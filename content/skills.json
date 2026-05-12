@@ -1,0 +1,22 @@
+{
+  "items": [
+    { "name": "AWS",          "level": "Professional",  "type": "cloud",          "icon": "aws" },
+    { "name": "Docker",       "level": "Advanced",      "type": "other, cloud",   "icon": "docker" },
+    { "name": "Firebase",     "level": "Intermediate",  "type": "cloud",          "icon": "firebase" },
+    { "name": "GitLab (CICD)","level": "Professional",  "type": "cloud, other",   "icon": "gitlab" },
+    { "name": "Linux",        "level": "Advanced",      "type": "cloud, other",   "icon": "linux" },
+    { "name": "Kubernetes",   "level": "Intermediate",  "type": "cloud, other",   "icon": "kubernetes" },
+    { "name": "Terraform",    "level": "Professional",  "type": "cloud, other",   "icon": "terraform" },
+    { "name": "CSS",          "level": "Intermediate",  "type": "frontend",       "icon": "css" },
+    { "name": "HTML",         "level": "Advanced",      "type": "frontend",       "icon": "html" },
+    { "name": "JavaScript",   "level": "Advanced",      "type": "frontend",       "icon": "javascript" },
+    { "name": "React",        "level": "Advanced",      "type": "frontend",       "icon": "react" },
+    { "name": "Sass",         "level": "Intermediate",  "type": "frontend",       "icon": "sass" },
+    { "name": "Django",       "level": "Advanced",      "type": "backend",        "icon": "django" },
+    { "name": "Python",       "level": "Professional",  "type": "backend",        "icon": "python" },
+    { "name": "SQL",          "level": "Professional",  "type": "backend",        "icon": "sql" },
+    { "name": "C++",          "level": "Intermediate",  "type": "backend",        "icon": "cpp" },
+    { "name": "Git",          "level": "Professional",  "type": "other",          "icon": "git" },
+    { "name": "R",            "level": "Intermediate",  "type": "other",          "icon": "r" }
+  ]
+}
