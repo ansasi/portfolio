@@ -28,10 +28,11 @@
 .app__wrapper {
   flex: 1;
   width: 100%;
+  min-width: 0;
   flex-direction: column;
   padding: 4rem 2rem;
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 600px) {
     padding: 4rem 1rem 2rem;
   }
 }
@@ -52,7 +53,7 @@
 }
 
 .head-text {
-  font-size: 2.75rem;
+  font-size: clamp(2rem, 1.4rem + 2.4vw, 2.75rem);
   font-weight: 800;
   text-align: center;
   color: var(--black-color);
@@ -66,10 +67,6 @@
 
   @media screen and (min-width: 2000px) {
     font-size: 4rem;
-  }
-
-  @media screen and (max-width: 450px) {
-    font-size: 2rem;
   }
 }
 
@@ -185,7 +182,9 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+// SocialMedia + NavigationDots are decorative desktop rails. Hide them
+// for any sub-desktop viewport so tablets/phones get the full width.
+@media screen and (max-width: 1200px) {
   .app__navigation,
   .app__social {
     display: none;

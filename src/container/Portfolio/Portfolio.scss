@@ -51,14 +51,17 @@
 }
 
 .app__portfolio-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
   align-items: stretch;
   gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 
   .app__portfolio-item {
-    width: calc(50% - 1rem);
+    width: 100%;
     max-width: 480px;
     display: flex;
     flex-direction: column;
@@ -79,14 +82,15 @@
     }
 
     @media screen and (min-width: 2000px) {
-      width: 470px;
+      max-width: 520px;
       padding: 1.25rem;
       border-radius: var(--radius-lg);
     }
+  }
 
-    @media screen and (max-width: 800px) {
-      width: 100%;
-    }
+  @media screen and (min-width: 2000px) {
+    max-width: 1600px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   }
 }
 
@@ -153,8 +157,24 @@
     opacity: 1;
   }
 
-  @media screen and (max-width: 800px) {
+  // On touch devices, render action buttons over the bottom-right corner
+  // instead of overlaying the entire screenshot at 50% opacity.
+  @media (hover: none) {
+    inset: auto 0.5rem 0.5rem auto;
+    width: auto;
+    height: auto;
+    background: transparent;
+    padding: 0;
     opacity: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    a {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(15, 23, 42, 0.75);
+      box-shadow: var(--shadow-sm);
+    }
   }
 }
 

@@ -36,6 +36,8 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  /* Safety net: stop a stray full-bleed element triggering page-level x-scroll */
+  overflow-x: hidden;
 }
 
 /* Account for fixed navbar when jumping to a section anchor */
