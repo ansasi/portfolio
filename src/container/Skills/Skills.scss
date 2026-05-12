@@ -6,8 +6,9 @@
 
 .app__skills-container {
   width: 100%;
-  margin-top: 3rem;
-  gap: 1rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  gap: 1.25rem;
 
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -22,100 +23,133 @@
 }
 
 .app__skills-category {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: var(--radius-md);
-  padding: 1.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(15, 23, 42, 0.04);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.25rem 1.25rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(15, 23, 42, 0.05);
   box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
 
   .app__skills-category-name {
     width: 100%;
-    font-size: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
     font-weight: 700;
-    text-align: center;
-    color: var(--secondary-color);
-    letter-spacing: 0.02em;
-    padding-bottom: 0.75rem;
+    text-align: left;
+    color: var(--black-color);
+    letter-spacing: -0.01em;
+    padding-bottom: 0.85rem;
     margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--lightGray-color);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: 3px;
+      border-radius: 999px;
+      background: var(--gradient-primary);
+    }
   }
 
   .app__skills-skill-group {
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 0.5rem;
+    justify-items: center;
 
     .app__skills-skill {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: center;
-
       text-align: center;
-      width: 90px;
-
-      transition: transform 0.25s ease;
+      width: 100%;
+      max-width: 110px;
+      gap: 0.4rem;
 
       .app__skills-skill-icon {
-        width: 72px;
-        height: 72px;
-        background-color: var(--white-color);
+        width: 64px;
+        height: 64px;
+        background: var(--white-color);
         border-radius: 50%;
-        border: 1px solid var(--lightGray-color);
+        border: 1px solid rgba(15, 23, 42, 0.06);
         box-shadow: var(--shadow-sm);
         transition: box-shadow 0.25s ease, border-color 0.25s ease,
           transform 0.25s ease;
 
         img {
           object-fit: contain;
-          width: 50%;
-          height: 50%;
+          width: 52%;
+          height: 52%;
         }
 
         &:hover {
-          box-shadow: 0 0 25px rgba(49, 59, 172, 0.15);
+          box-shadow: 0 0 0 6px var(--secondary-color-soft), var(--shadow-md);
           border-color: var(--secondary-color);
+          transform: translateY(-2px);
         }
 
         @media screen and (min-width: 2000px) {
-          width: 120px;
-          height: 120px;
+          width: 100px;
+          height: 100px;
         }
 
         @media screen and (max-width: 450px) {
-          width: 64px;
-          height: 64px;
+          width: 56px;
+          height: 56px;
         }
       }
 
       .app__skills-skill-name {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         font-weight: 600;
-        text-transform: capitalize;
-        margin-top: 0.6rem;
         color: var(--black-color);
+        line-height: 1.2;
       }
 
       .app__skills-skill-level {
-        font-size: 0.8rem;
-        font-weight: 500;
-        color: var(--gray-color);
+        display: inline-block;
+        font-size: 0.65rem;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-top: 0.15rem;
-      }
+        letter-spacing: 0.08em;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        background: var(--lightGray-color);
+        color: var(--gray-color);
 
-      @media screen and (min-width: 2000px) {
-        width: 130px;
+        &.level-professional {
+          background: rgba(49, 59, 172, 0.12);
+          color: var(--secondary-color);
+        }
+        &.level-advanced {
+          background: rgba(91, 103, 232, 0.14);
+          color: #3b46d4;
+        }
+        &.level-intermediate {
+          background: rgba(255, 122, 89, 0.16);
+          color: #c64a2a;
+        }
+        &.level-beginner {
+          background: rgba(15, 23, 42, 0.08);
+          color: var(--gray-color);
+        }
       }
     }
   }

@@ -1,24 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 :root {
   --font-base: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
+  --primary-color: #f4f6fb;
+  --primary-color-deep: #e6ebf5;
   --secondary-color: #313bac;
   --secondary-color-hover: #2430af;
   --secondary-color-soft: rgba(49, 59, 172, 0.12);
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
+  --accent-color: #ff7a59;
+  --accent-color-soft: rgba(255, 122, 89, 0.16);
+  --black-color: #0b1024;
+  --ink-color: #1a1f3a;
+  --lightGray-color: #e4e7ef;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
   --light-color: rgba(255, 255, 255, 0.6);
 
+  --gradient-primary: linear-gradient(135deg, #313bac 0%, #5b67e8 100%);
+  --gradient-accent: linear-gradient(135deg, #ff7a59 0%, #ffb56b 100%);
+  --gradient-surface: linear-gradient(180deg, #ffffff 0%, #f4f6fb 100%);
+
   --radius-sm: 0.5rem;
   --radius-md: 0.85rem;
   --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 4px 12px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.08), 0 12px 32px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.1), 0 28px 56px rgba(49, 59, 172, 0.12);
+  --shadow-glow: 0 18px 40px -12px rgba(49, 59, 172, 0.45);
 
   color-scheme: light;
 }
@@ -36,8 +48,47 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  color: var(--ink-color);
   /* Safety net: stop a stray full-bleed element triggering page-level x-scroll */
   overflow-x: hidden;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+/* Ambient atmosphere: soft colored blobs sit behind every section and
+   give the otherwise flat page subtle depth. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+body::before {
+  width: 520px;
+  height: 520px;
+  top: -160px;
+  left: -180px;
+  background: radial-gradient(circle at 30% 30%, rgba(91, 103, 232, 0.55), transparent 70%);
+}
+
+body::after {
+  width: 480px;
+  height: 480px;
+  bottom: -160px;
+  right: -160px;
+  background: radial-gradient(circle at 70% 70%, rgba(255, 122, 89, 0.4), transparent 70%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    opacity: 0.35;
+  }
 }
 
 /* Account for fixed navbar when jumping to a section anchor */
