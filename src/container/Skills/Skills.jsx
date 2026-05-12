@@ -1,43 +1,21 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Skills.scss";
 import { SkillsData } from "../../constants/defaultData";
 
+const skillsByType = (type) =>
+  SkillsData.filter(
+    (skill) =>
+      skill.type.toLowerCase().includes(type) || skill.type.toLowerCase().includes("all")
+  );
+
+const skillsCloud = skillsByType("cloud");
+const skillsFrontend = skillsByType("frontend");
+const skillsBackend = skillsByType("backend");
+const skillsOther = skillsByType("other");
+
 const Skills = () => {
-  const [skillsFrontend, setSkillsFrontend] = useState([]);
-  const [skillsBackend, setSkillsBackend] = useState([]);
-  const [skillsCloud, setSkillsCloud] = useState([]);
-  const [skillsOther, setSkillsOther] = useState([]);
-
-  useEffect(() => {
-    setSkillsCloud(
-      SkillsData.filter(
-        (skill) =>
-          skill.type.toLowerCase().includes("cloud") || skill.type.toLowerCase().includes("all")
-      )
-    );
-    setSkillsFrontend(
-      SkillsData.filter(
-        (skill) =>
-          skill.type.toLowerCase().includes("frontend") || skill.type.toLowerCase().includes("all")
-      )
-    );
-    setSkillsBackend(
-      SkillsData.filter(
-        (skill) =>
-          skill.type.toLowerCase().includes("backend") || skill.type.toLowerCase().includes("all")
-      )
-    );
-    setSkillsOther(
-      SkillsData.filter(
-        (skill) =>
-          skill.type.toLowerCase().includes("other") || skill.type.toLowerCase().includes("all")
-      )
-    );
-  }, []);
-
   return (
     <>
       <h2 className="head-text">
