@@ -26,18 +26,28 @@ const Experience = () => {
   return (
     <>
       <h2 className="head-text">
-        My work <span>Experience</span>
+        My work <span>experience</span>
       </h2>
-      <br />
-      <VerticalTimeline>
-        {ExperienceData.map((experience, index) => (
+      <VerticalTimeline lineColor="rgba(49, 59, 172, 0.25)">
+        {ExperienceData.map((experience) => (
           <VerticalTimelineElement
-            key={index}
+            key={`${experience.company}-${experience.name}-${experience.date}`}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#ffffff", color: "#000" }}
-            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
+            contentStyle={{
+              background: "var(--white-color)",
+              color: "var(--black-color)",
+              boxShadow: "var(--shadow-sm)",
+              borderRadius: "var(--radius-md)",
+              border: "1px solid var(--lightGray-color)",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid #fff" }}
             date={experience.date}
-            iconStyle={{ background: "#ffffff", color: "#000" }}
+            iconStyle={{
+              background: "var(--white-color)",
+              color: "var(--secondary-color)",
+              boxShadow:
+                "0 0 0 4px rgba(49,59,172,0.18), 0 4px 14px rgba(15,23,42,0.08)",
+            }}
             icon={getIcon(experience.company)}
           >
             <h3 className="vertical-timeline-element-title">{experience.name}</h3>

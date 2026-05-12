@@ -7,15 +7,23 @@ import "./App.scss";
 function App() {
   return (
     <div className="app">
-      <Toaster />
+      <a className="skip-link" href="#main">
+        Skip to main content
+      </a>
+      <Toaster
+        position="top-right"
+        toastOptions={{ ariaProps: { role: "status", "aria-live": "polite" } }}
+      />
       <Navbar />
-      <Header />
-      <About />
-      <Skills />
-      <Portfolio />
-      {/* <Testimonial /> */}
-      <Experience />
-      <Contact />
+      <main id="main">
+        <Header />
+        <About />
+        <Skills />
+        <Portfolio />
+        {/* <Testimonial /> */}
+        <Experience />
+        <Contact />
+      </main>
       <Footer />
       <FloatingNavbar />
     </div>

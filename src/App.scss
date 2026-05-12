@@ -56,7 +56,9 @@
   font-weight: 800;
   text-align: center;
   color: var(--black-color);
-  text-transform: capitalize;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  text-wrap: balance;
 
   span {
     color: var(--secondary-color);
@@ -117,17 +119,22 @@
     justify-content: center;
     align-items: center;
 
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.25s ease, border-color 0.25s ease,
+      transform 0.25s ease, box-shadow 0.25s ease;
 
     svg {
       width: 20px;
       height: 20px;
       color: var(--gray-color);
+      transition: color 0.25s ease;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background-color: var(--secondary-color);
       border-color: var(--secondary-color);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
 
       svg {
         color: var(--white-color);
@@ -163,10 +170,12 @@
     background-color: #cbcbcb;
     margin: 0.5rem;
 
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background-color: var(--secondary-color);
+      transform: scale(1.2);
     }
 
     @media screen and (min-width: 2000px) {

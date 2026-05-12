@@ -1,16 +1,18 @@
 /* eslint-disable react/prop-types */
 
 const NavigationDots = ({ active }) => (
-  <div className="app__navigation">
-    {["home", "about", "skills", "portfolio", "experience", "contact"].map((item, index) => (
+  <nav className="app__navigation" aria-label="Section navigation">
+    {["home", "about", "skills", "portfolio", "experience", "contact"].map((item) => (
       <a
         href={`#${item}`}
-        key={item + index}
+        key={item}
         className="app__navigation-dot"
+        aria-label={`Go to ${item} section`}
+        aria-current={active === item ? "true" : undefined}
         style={active === item ? { backgroundColor: "#313BAC" } : {}}
       />
     ))}
-  </div>
+  </nav>
 );
 
 export default NavigationDots;

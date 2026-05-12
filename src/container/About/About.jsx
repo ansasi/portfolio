@@ -11,29 +11,32 @@ const About = () => {
         <span>About</span> me
       </h2>
 
-      <p className="app__about-comment">
-        <br />
-        {Settings.aboutComment}
-      </p>
+      <p className="app__about-comment">{Settings.aboutComment}</p>
 
       <div className="app__profiles">
         {AboutData.map((about, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
+          <motion.article
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileHover={{ y: -6 }}
+            transition={{ duration: 0.4, type: "tween", delay: index * 0.05 }}
             className="app__profile-item"
-            key={about.title + index}
+            key={about.title}
           >
-            <img src={about.image} alt={about.title} />
-            {/* <img src={urlFor(about.imgUrl)} alt={about.title} /> */}
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
+            <img
+              src={about.image}
+              alt={about.title}
+              loading="lazy"
+              width="320"
+              height="170"
+            />
+            <h3 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
-            </h2>
+            </h3>
             <p className="p-text" style={{ marginTop: 10 }}>
               {about.description}
             </p>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
     </>

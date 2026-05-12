@@ -1,31 +1,29 @@
 .app__footer {
-  background: var(--color-primary);
-  padding: 1rem 1rem;
+  background: var(--white-color);
+  padding: 3rem 1.5rem 2rem;
   text-align: center;
   margin-top: 2rem;
+  border-top: 1px solid var(--lightGray-color);
+
   a {
-    color: var(--color-bg);
+    color: var(--gray-color);
     text-decoration: none;
+    transition: color 0.2s ease;
   }
+
   .app__footer-logo {
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
     background-image: linear-gradient(to right, #033392, #027add);
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     display: inline-block;
-
-    img {
-      width: 220px;
-      height: 50px;
-    }
 
     @media screen and (max-width: 600px) {
       margin-bottom: 1.5rem;
-      img {
-        width: 180px;
-        height: 40px;
-      }
+      font-size: 1.75rem;
     }
   }
 
@@ -34,23 +32,29 @@
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    gap: 2rem;
-    margin: 2rem;
+    gap: 1.5rem 2rem;
+    margin: 2rem 0;
+
     li {
-      color: var(--gray-color);
-      text-transform: uppercase;
-      font-weight: 500;
+      a {
+        color: var(--gray-color);
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
 
-      transition: all 0.3s ease-in-out;
+        transition: color 0.2s ease;
 
-      &:hover {
-        color: var(--secondary-color);
+        &:hover,
+        &:focus-visible {
+          color: var(--secondary-color);
+        }
       }
     }
 
     @media screen and (max-width: 600px) {
       flex-direction: column;
-      grid-area: 1.5rem;
+      gap: 1rem;
     }
   }
 
@@ -59,37 +63,47 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     a {
-      padding: 0.8rem;
-      display: flex;
+      width: 44px;
+      height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: var(--gray-color);
+      background: var(--primary-color);
 
-      &:hover {
-        transform: scale(1.1);
-        transition: all 0.5s ease-in-out;
+      transition: transform 0.2s ease, background-color 0.2s ease,
+        color 0.2s ease;
+
+      &:hover,
+      &:focus-visible {
+        transform: translateY(-2px);
+        background: var(--secondary-color);
+        color: var(--white-color);
       }
     }
     @media screen and (max-width: 600px) {
-      margin-bottom: 2.4rem;
+      margin-bottom: 1.5rem;
     }
   }
 
   .app__footer-copyright {
-    margin-bottom: 2rem;
-    color: var(--color-bg);
+    color: var(--gray-color);
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: var(--gray-color);
-      line-height: 1.5;
+      line-height: 1.6;
 
       @media screen and (min-width: 2000px) {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
       }
     }
   }
   @media screen and (max-width: 600px) {
-    padding: 1.5rem 0 3rem;
-    margin-top: 7rem;
+    padding: 2rem 1rem 3rem;
+    margin-top: 4rem;
   }
 }
