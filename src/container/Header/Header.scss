@@ -372,12 +372,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.6rem 1rem 0.6rem 0.6rem;
+  padding: 0.5rem 0.95rem 0.5rem 0.5rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(15, 23, 42, 0.06);
   box-shadow: var(--shadow-md);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--black-color);
   white-space: nowrap;
@@ -385,40 +385,54 @@
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 
   img {
-    width: 28px;
-    height: 28px;
+    width: 26px;
+    height: 26px;
     object-fit: contain;
   }
 
-  &--pos1 { top: 6%; left: -2%; }
-  &--pos2 { top: 18%; right: -6%; }
-  &--pos3 { bottom: 22%; left: -8%; }
-  &--pos4 { bottom: 6%; right: -2%; }
+  /* Eight evenly-spaced clock-face positions around the portrait.
+     Order chosen so adjacent chip widths don't collide. */
+  &--pos1 { top: -2%;   left: 50%; transform: translateX(-50%); }     /* Python      — 12 o'clock */
+  &--pos2 { top: 8%;    right: -8%; }                                  /* AWS         — 1:30 */
+  &--pos3 { top: 46%;   right: -14%; }                                 /* JavaScript  — 3 */
+  &--pos4 { bottom: 8%; right: -8%; }                                  /* SQL         — 4:30 */
+  &--pos5 { bottom: -2%; left: 50%; transform: translateX(-50%); }     /* Terraform   — 6 */
+  &--pos6 { bottom: 8%; left: -8%; }                                   /* Linux       — 7:30 */
+  &--pos7 { top: 46%;   left: -14%; }                                  /* React       — 9 */
+  &--pos8 { top: 8%;    left: -8%; }                                   /* Docker      — 10:30 */
 
   &:hover {
     box-shadow: var(--shadow-lg);
   }
 
   @media screen and (max-width: 1200px) {
-    font-size: 0.8rem;
-    padding: 0.5rem 0.85rem 0.5rem 0.5rem;
+    font-size: 0.78rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.4rem;
     img { width: 22px; height: 22px; }
 
-    &--pos1 { top: 4%; left: -8%; }
-    &--pos2 { top: 14%; right: -10%; }
-    &--pos3 { bottom: 18%; left: -12%; }
-    &--pos4 { bottom: 4%; right: -8%; }
+    &--pos1 { top: -3%;    left: 50%; }
+    &--pos2 { top: 7%;     right: -10%; }
+    &--pos3 { top: 46%;    right: -16%; }
+    &--pos4 { bottom: 7%;  right: -10%; }
+    &--pos5 { bottom: -3%; left: 50%; }
+    &--pos6 { bottom: 7%;  left: -10%; }
+    &--pos7 { top: 46%;    left: -16%; }
+    &--pos8 { top: 7%;     left: -10%; }
   }
 
   @media screen and (max-width: 600px) {
-    font-size: 0.72rem;
-    gap: 0.4rem;
-    padding: 0.35rem 0.7rem 0.35rem 0.35rem;
-    img { width: 18px; height: 18px; }
+    font-size: 0.68rem;
+    gap: 0.35rem;
+    padding: 0.28rem 0.55rem 0.28rem 0.28rem;
+    img { width: 16px; height: 16px; }
 
-    &--pos1 { top: 2%; left: -4%; }
-    &--pos2 { top: 22%; right: -6%; }
-    &--pos3 { bottom: 22%; left: -6%; }
-    &--pos4 { bottom: 2%; right: -4%; }
+    &--pos1 { top: -2%;    left: 50%; }
+    &--pos2 { top: 8%;     right: -4%; }
+    &--pos3 { top: 47%;    right: -8%; }
+    &--pos4 { bottom: 8%;  right: -4%; }
+    &--pos5 { bottom: -2%; left: 50%; }
+    &--pos6 { bottom: 8%;  left: -4%; }
+    &--pos7 { top: 47%;    left: -8%; }
+    &--pos8 { top: 8%;     left: -4%; }
   }
 }

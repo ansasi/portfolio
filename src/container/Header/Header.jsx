@@ -7,11 +7,17 @@ import { Settings, ExperienceData } from "../../constants/defaultData";
 import CV from "../../assets/CV.pdf";
 import "./Header.scss";
 
+/* Order matters: each entry maps to a pos1..pos8 slot, walking
+   clockwise around the portrait starting at 12 o'clock. */
 const HEADER_CIRCLES = [
-  { src: "python", alt: "Python" },
-  { src: "aws", alt: "AWS" },
-  { src: "react", alt: "React" },
-  { src: "sql", alt: "SQL" },
+  { src: "python", alt: "Python" },         // 12 o'clock
+  { src: "aws", alt: "AWS" },               // 1:30
+  { src: "javascript", alt: "JavaScript" }, // 3
+  { src: "sql", alt: "SQL" },               // 4:30
+  { src: "terraform", alt: "Terraform" },   // 6
+  { src: "linux", alt: "Linux" },           // 7:30
+  { src: "react", alt: "React" },           // 9
+  { src: "docker", alt: "Docker" },         // 10:30
 ];
 
 const yearsOfExperience = () => {

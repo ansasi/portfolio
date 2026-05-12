@@ -1,11 +1,11 @@
 {
   "items": [
     { "name": "AWS",          "level": "Professional",  "type": "cloud",          "icon": "aws" },
-    { "name": "Docker",       "level": "Advanced",      "type": "other, cloud",   "icon": "docker" },
+    { "name": "Docker",       "level": "Professional",  "type": "other, cloud",   "icon": "docker" },
     { "name": "Firebase",     "level": "Intermediate",  "type": "cloud",          "icon": "firebase" },
     { "name": "GitLab (CICD)","level": "Professional",  "type": "cloud, other",   "icon": "gitlab" },
-    { "name": "Linux",        "level": "Advanced",      "type": "cloud, other",   "icon": "linux" },
-    { "name": "Kubernetes",   "level": "Intermediate",  "type": "cloud, other",   "icon": "kubernetes" },
+    { "name": "Linux",        "level": "Professional",  "type": "cloud, other",   "icon": "linux" },
+    { "name": "Kubernetes",   "level": "Advanced",      "type": "cloud, other",   "icon": "kubernetes" },
     { "name": "Terraform",    "level": "Professional",  "type": "cloud, other",   "icon": "terraform" },
     { "name": "CSS",          "level": "Intermediate",  "type": "frontend",       "icon": "css" },
     { "name": "HTML",         "level": "Advanced",      "type": "frontend",       "icon": "html" },

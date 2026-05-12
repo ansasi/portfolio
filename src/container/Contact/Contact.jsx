@@ -59,7 +59,6 @@ const Contact = () => {
 
   return (
     <>
-      <span className="eyebrow">Let&rsquo;s connect</span>
       <h2 className="head-text">{Settings.contactHeading}</h2>
 
       <div className="app__contact-grid">
