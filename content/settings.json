@@ -1,0 +1,17 @@
+{
+  "name": "Angel",
+  "fullName": "Angel Sanchez Sierra",
+  "greeting": "Hello, I am",
+  "taglines": [
+    { "prefix": "Cloud", "suffix": "Architect" },
+    { "prefix": "Web", "suffix": "Developer" },
+    { "prefix": "Data", "suffix": "Engineer" },
+    { "prefix": "Business", "suffix": "Intelligence" }
+  ],
+  "extraTag": "Freelancer",
+  "aboutComment": "I know that Good Quality means Good Business",
+  "email": "angel.sanchez.sierra@proton.me",
+  "linkedin": "https://www.linkedin.com/in/angelsanchezsierra/",
+  "github": "https://github.com/ansasi",
+  "contactHeading": "Take a coffee & chat with me"
+}

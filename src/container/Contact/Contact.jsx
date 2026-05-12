@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import toast from "react-hot-toast";
 
 import { images } from "../../constants";
+import { Settings } from "../../constants/defaultData";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
@@ -53,14 +54,14 @@ const Contact = () => {
   return (
     <>
       <h2 className="head-text">
-        Take a coffee & <span>chat</span> with me
+        {Settings.contactHeading}
       </h2>
 
       <div className="app__contact-cards">
         <div className="app__contact-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:angel.sanchez.sierra@proton.me" className="p-text">
-            angel.sanchez.sierra@proton.me
+          <a href={`mailto:${Settings.email}`} className="p-text">
+            {Settings.email}
           </a>
         </div>
         {/* <div className="app__contact-card">

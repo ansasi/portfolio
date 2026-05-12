@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Docker HomeLab">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="container" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <g transform="translate(80,120)">
+    <rect x="0" y="0" width="80" height="60" rx="6" fill="url(#container)"/>
+    <rect x="90" y="0" width="80" height="60" rx="6" fill="url(#container)"/>
+    <rect x="180" y="0" width="80" height="60" rx="6" fill="url(#container)"/>
+    <rect x="270" y="0" width="80" height="60" rx="6" fill="url(#container)"/>
+    <rect x="45" y="-70" width="80" height="60" rx="6" fill="url(#container)" opacity="0.85"/>
+    <rect x="135" y="-70" width="80" height="60" rx="6" fill="url(#container)" opacity="0.85"/>
+    <rect x="225" y="-70" width="80" height="60" rx="6" fill="url(#container)" opacity="0.85"/>
+    <rect x="90" y="-140" width="80" height="60" rx="6" fill="url(#container)" opacity="0.7"/>
+    <rect x="180" y="-140" width="80" height="60" rx="6" fill="url(#container)" opacity="0.7"/>
+    <path d="M 360 -60 q 60 -30 120 0" stroke="#e0f2fe" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="420" cy="-65" rx="60" ry="14" fill="#e0f2fe"/>
+  </g>
+  <text x="300" y="320" text-anchor="middle" fill="#e0f2fe" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="700">Docker HomeLab</text>
+  <text x="300" y="355" text-anchor="middle" fill="#94a3b8" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16">Compose stacks for self-hosted services</text>
+</svg>

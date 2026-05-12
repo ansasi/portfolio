@@ -1,0 +1,114 @@
+media:
+  - name: portfolio_media
+    label: Portfolio media
+    input: public/portfolio
+    output: /portfolio
+    extensions: [jpg, jpeg, png, webp, svg, gif]
+
+content:
+  - name: settings
+    label: Site settings
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: name, label: Display name, type: string }
+      - { name: fullName, label: Full name, type: string }
+      - { name: greeting, label: Greeting line, type: string }
+      - name: taglines
+        label: Header taglines
+        type: object
+        list: true
+        fields:
+          - { name: prefix, label: Bold prefix, type: string }
+          - { name: suffix, label: Suffix, type: string }
+      - { name: extraTag, label: Extra tagline, type: string }
+      - { name: aboutComment, label: About section subtitle, type: string }
+      - { name: email, label: Contact email, type: string, options: { format: email } }
+      - { name: linkedin, label: LinkedIn URL, type: string }
+      - { name: github, label: GitHub URL, type: string }
+      - { name: contactHeading, label: Contact heading, type: string }
+
+  - name: about
+    label: About cards
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: items
+        label: Cards
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Card image key
+            type: select
+            options:
+              values: [about01, about02, about03, about04, tools]
+
+  - name: experience
+    label: Work experience
+    type: file
+    path: content/experience.json
+    format: json
+    fields:
+      - name: items
+        label: Roles
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Job title, type: string }
+          - { name: company, label: Company, type: string }
+          - { name: date, label: Date range, type: string }
+          - { name: desc, label: Description, type: text }
+          - { name: order, label: Display order, type: number }
+
+  - name: portfolio
+    label: Projects
+    type: file
+    path: content/portfolio.json
+    format: json
+    fields:
+      - name: items
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: codeLink, label: Source URL, type: string }
+          - { name: projectLink, label: Live URL, type: string, required: false }
+          - { name: image, label: Screenshot, type: image }
+          - { name: tags, label: Tags, type: string, list: true }
+
+  - name: skills
+    label: Skills
+    type: file
+    path: content/skills.json
+    format: json
+    fields:
+      - name: items
+        label: Skills
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - name: level
+            label: Level
+            type: select
+            options:
+              values: [Beginner, Intermediate, Advanced, Professional]
+          - { name: type, label: "Categories (comma-separated)", type: string }
+          - name: icon
+            label: Icon key
+            type: select
+            options:
+              values:
+                [
+                  aws, docker, firebase, gitlab, linux, kubernetes, terraform,
+                  css, html, javascript, react, sass,
+                  django, python, sql, cpp, r,
+                  git,
+                ]

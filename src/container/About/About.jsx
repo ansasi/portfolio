@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./About.scss";
-import { AboutData } from "../../constants/defaultData";
+import { AboutData, Settings } from "../../constants/defaultData";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -19,8 +19,8 @@ const About = () => {
       </h2>
 
       <p className="app__about-comment">
-        <br />I know that <span className="bold-text">Good Quality</span> means{" "}
-        <span className="bold-text">Good Business</span>
+        <br />
+        {Settings.aboutComment}
       </p>
 
       <div className="app__profiles">

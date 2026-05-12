@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Cloud Data Engineer",
+      "company": "Alpiq",
+      "date": "MAY 2023 - PRESENT",
+      "desc": "Cloud Data Engineer at Alpiq, working for the IT Data & Analytics department. I keep business projects highly available, resilient and cost-efficient on AWS using Terraform for infrastructure, GitLab CI/CD for delivery, Docker for containerization and Kubernetes (EKS) for orchestration. Alongside this I run a personal HomeLab for self-hosted services and continuously explore AI-assisted tooling.",
+      "order": 1
+    },
+    {
+      "name": "Data Engineer",
+      "company": "DataCentric",
+      "date": "DEC 2022 - MAY 2023",
+      "desc": "Designed, deployed and maintained AWS infrastructure for the company and its clients using Terraform and Python. Worked daily with Docker, EC2, VPCs and supporting services to automate and standardize data processes, using Terraform for IaC and Python for Spark-based ETL code.",
+      "order": 2
+    },
+    {
+      "name": "Business Intelligence Engineer",
+      "company": "Amazon",
+      "date": "MAR 2022 - SEP 2022",
+      "desc": "At Amazon's EU headquarters in Luxembourg I built SQL models to optimize warehouse operations, automated ETL pipelines with Python and AWS, built full-stack websites and designed cloud architectures for the Logistics Department.",
+      "order": 3
+    },
+    {
+      "name": "Data Scientist",
+      "company": "CIC Lab",
+      "date": "JUN 2021 - DEC 2021",
+      "desc": "Led a project at Saargummi's factory to optimize data processing workflows using Python and R. Built a predictive maintenance model with Pandas and Keras that helped the factory pre-empt production line failures, reducing downtime by 7%.",
+      "order": 4
+    }
+  ]
+}

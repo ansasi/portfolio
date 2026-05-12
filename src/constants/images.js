@@ -17,7 +17,6 @@ import cpp from "../assets/skills/backend/cpp.png";
 import git from "../assets/skills/other/git.png";
 import r from "../assets/skills/backend/r.png";
 
-
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
 
@@ -25,14 +24,6 @@ import about01 from "../assets/about/about01.png";
 import about02 from "../assets/about/about02.png";
 import about03 from "../assets/about/about03.png";
 import about04 from "../assets/about/about04.png";
-
-import sheetgenius from "../assets/portfolio/sheetgenius.jpg";
-import event_app from "../assets/portfolio/event_app.jpg";
-import gym from "../assets/portfolio/gym.jpg";
-import social_media from "../assets/portfolio/social_media.jpg";
-import ecommerce from "../assets/portfolio/ecommerce.jpg";
-import open_ai from "../assets/portfolio/openai_chat.jpg";
-import core_construcciones from "../assets/portfolio/core_construcciones.jpg";
 
 import tools from "../assets/tools.jfif";
 import profileAnsasiBg from "../assets/profile_ansasi_bg.jpg";
@@ -71,11 +62,4 @@ export default {
   amazon,
   profileAnsasiBg,
   tools,
-  sheetgenius,
-  event_app,
-  gym,
-  social_media,
-  ecommerce,
-  open_ai,
-  core_construcciones,
 };

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
+import { Settings } from "../../constants/defaultData";
 import CV from "../../assets/CV.pdf";
 import "./Header.scss";
 
@@ -26,25 +27,19 @@ const Header = () => (
         <div className="badge-cmp app__flex">
           <span>👋</span>
           <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Angel</h1>
+            <p className="p-text">{Settings.greeting}</p>
+            <h1 className="head-text">{Settings.name}</h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">
-            <span className="bold-text">Cloud </span>Architect
-          </p>
-          <p className="p-text">
-            <span className="bold-text">Web </span>Developer
-          </p>
-          <p className="p-text">
-            <span className="bold-text">Data </span>Engineer
-          </p>
-          <p className="p-text">
-            <span className="bold-text">Business </span>Intelligence
-          </p>
-          <p className="p-text">Freelancer</p>
+          {Settings.taglines.map((tag) => (
+            <p className="p-text" key={`${tag.prefix}-${tag.suffix}`}>
+              <span className="bold-text">{tag.prefix} </span>
+              {tag.suffix}
+            </p>
+          ))}
+          {Settings.extraTag && <p className="p-text">{Settings.extraTag}</p>}
         </div>
 
         <div className="tag-cmp app__flex">
