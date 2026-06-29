@@ -1,25 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Terraform AWS Modules">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-label="Terraform">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1e1b2e"/>
-      <stop offset="100%" stop-color="#4c1d95"/>
+    <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b42bc"/>
+      <stop offset="100%" stop-color="#4b3bbd"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="400" fill="url(#bg)"/>
-  <g transform="translate(0,-15)">
-    <!-- bottom cube -->
-    <polygon points="300,210 350,235 300,260 250,235" fill="#b794f6"/>
-    <polygon points="250,235 300,260 300,310 250,285" fill="#805ad5"/>
-    <polygon points="350,235 300,260 300,310 350,285" fill="#553c9a"/>
-    <!-- middle cube -->
-    <polygon points="300,160 350,185 300,210 250,185" fill="#b794f6"/>
-    <polygon points="250,185 300,210 300,260 250,235" fill="#805ad5"/>
-    <polygon points="350,185 300,210 300,260 350,235" fill="#553c9a"/>
-    <!-- top cube -->
-    <polygon points="300,110 350,135 300,160 250,135" fill="#b794f6"/>
-    <polygon points="250,135 300,160 300,210 250,185" fill="#805ad5"/>
-    <polygon points="350,135 300,160 300,210 350,185" fill="#553c9a"/>
-  </g>
-  <text x="300" y="350" text-anchor="middle" fill="#ede9fe" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="32" font-weight="700">Terraform AWS Modules</text>
-  <text x="300" y="382" text-anchor="middle" fill="#a78bfa" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="16">Reusable infrastructure-as-code for AWS</text>
+  <rect width="1000" height="500" fill="url(#tbg)"/>
+  <!-- official Terraform logo (Simple Icons, CC0), rendered white -->
+  <svg x="390" y="70" width="220" height="270" viewBox="0 0 24 24" fill="#ffffff">
+    <path d="M1.44 0v7.575l6.561 3.79V3.787zm21.12 4.227l-6.561 3.791v7.574l6.56-3.787zM8.72 4.23v7.575l6.561 3.787V8.018zm0 8.405v7.575L15.28 24v-7.578z"/>
+  </svg>
+  <text x="500" y="410" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="800" letter-spacing="2">Terraform</text>
 </svg>

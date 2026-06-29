@@ -18,10 +18,10 @@
     },
     {
       "title": "Fitness App",
-      "description": "A fitness exercise browser rebuilt with Astro, React 19 and Tailwind CSS. Search and filter 873 exercises, each with step-by-step instructions and an image carousel.",
+      "description": "A focused exercise library (Forge) built with Astro, React 19 and Tailwind CSS. Filter 873 exercises by muscle, equipment and level, each with step-by-step instructions and reference imagery.",
       "codeLink": "https://github.com/ansasi/fitness-app",
-      "projectLink": "",
-      "image": "/portfolio/gym.jpg",
+      "projectLink": "https://forge.datia.ch/en/",
+      "image": "/portfolio/forge.svg",
       "tags": ["Sports", "Web App", "React JS", "Astro", "TypeScript", "Tailwind"]
     },
     {

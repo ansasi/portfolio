@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-label="Forge — fitness exercise library">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#c2f24d" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#c2f24d" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#c2f24d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="500" fill="#0a0c0a"/>
+  <rect width="1000" height="500" fill="url(#glow)"/>
+
+  <!-- header -->
+  <text x="40" y="68" fill="#c2f24d" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="900">F</text>
+  <text x="66" y="66" fill="#f4f5f3" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="3">FORGE</text>
+  <g>
+    <rect x="888" y="44" width="72" height="34" rx="17" fill="none" stroke="#2c302c" stroke-width="1.5"/>
+    <text x="924" y="67" text-anchor="middle" fill="#cfd3cd" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">EN ⌄</text>
+  </g>
+
+  <!-- headline -->
+  <g transform="translate(40,0) scale(0.92,1)">
+    <text x="0" y="215" fill="#f4f5f3" font-family="Arial Narrow, Arial, sans-serif" font-size="92" font-weight="900" letter-spacing="-2">MOVE WITH</text>
+    <text x="0" y="305" fill="#c2f24d" font-family="Arial Narrow, Arial, sans-serif" font-size="92" font-weight="900" letter-spacing="-2">PURPOSE.</text>
+  </g>
+
+  <!-- subtext -->
+  <text x="40" y="352" fill="#9aa0a0" font-family="Arial, Helvetica, sans-serif" font-size="20">A focused exercise library. Filter by muscle, equipment,</text>
+  <text x="40" y="380" fill="#9aa0a0" font-family="Arial, Helvetica, sans-serif" font-size="20">level and category — every movement with step-by-step</text>
+  <text x="40" y="408" fill="#9aa0a0" font-family="Arial, Helvetica, sans-serif" font-size="20">instructions and reference imagery.</text>
+
+  <!-- buttons -->
+  <g>
+    <rect x="40" y="438" width="218" height="46" rx="23" fill="#c2f24d"/>
+    <text x="149" y="467" text-anchor="middle" fill="#0a0c0a" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800">Browse exercises →</text>
+    <rect x="272" y="438" width="186" height="46" rx="23" fill="none" stroke="#3a3e3a" stroke-width="1.5"/>
+    <text x="365" y="467" text-anchor="middle" fill="#e7e9e5" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">Filter the catalog</text>
+  </g>
+
+  <!-- right monogram panel -->
+  <rect x="600" y="110" width="360" height="320" rx="6" fill="#0e120c" stroke="#c2f24d" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="934" y="158" text-anchor="end" fill="#c2f24d" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="3">EST. 2026</text>
+  <path d="M700,180 H882 V226 H772 V266 H854 V308 H772 V378 H700 Z" fill="#c2f24d"/>
+  <path d="M612,402 l26,12" stroke="#c2f24d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M948,402 l-26,12" stroke="#c2f24d" stroke-width="3" stroke-linecap="round"/>
+</svg>
