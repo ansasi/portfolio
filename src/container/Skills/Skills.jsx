@@ -10,10 +10,12 @@ const skillsByType = (type) =>
       skill.type.toLowerCase().includes(type) || skill.type.toLowerCase().includes("all")
   );
 
-const skillsCloud = skillsByType("cloud");
-const skillsFrontend = skillsByType("frontend");
-const skillsBackend = skillsByType("backend");
-const skillsOther = skillsByType("other");
+const skillCategories = [
+  { name: "Cloud", skills: skillsByType("cloud") },
+  { name: "Frontend", skills: skillsByType("frontend") },
+  { name: "Backend", skills: skillsByType("backend") },
+  { name: "Other", skills: skillsByType("other") },
+];
 
 const Skills = () => {
   return (
@@ -23,84 +25,29 @@ const Skills = () => {
       </h2>
 
       <div className="app__skills-container">
-        <motion.div className="app__skills-category">
-          <h3 className="app__skills-category-name">Cloud</h3>
-          <div className="app__skills-skill-group">
-            {skillsCloud.map((skill) => (
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className="app__skills-skill app__flex"
-                key={skill.name}
-              >
-                <div className="app__flex">
-                  <img src={skill.icon} alt={skill.name} />
-                </div>
-                <p className="app__skills-skill-name">{skill.name}</p>
-                <p className="app__skills-skill-level">{skill.level}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-        <motion.div className="app__skills-category">
-          <div>
-            <h3 className="app__skills-category-name">Frontend</h3>
-          </div>
-          <div className="app__skills-skill-group">
-            {skillsFrontend.map((skill) => (
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className="app__skills-skill app__flex"
-                key={skill.name}
-              >
-                <div className="app__flex">
-                  <img src={skill.icon} alt={skill.name} />
-                </div>
-                <p className="app__skills-skill-name">{skill.name}</p>
-                <p className="app__skills-skill-level">{skill.level}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-        <motion.div className="app__skills-category">
-          <h3 className="app__skills-category-name">Backend</h3>
-          <div className="app__skills-skill-group">
-            {skillsBackend.map((skill) => (
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className="app__skills-skill app__flex"
-                key={skill.name}
-              >
-                <div className="app__flex">
-                  <img src={skill.icon} alt={skill.name} />
-                </div>
-                <p className="app__skills-skill-name">{skill.name}</p>
-                <p className="app__skills-skill-level">{skill.level}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-        <motion.div className="app__skills-category">
-          <h3 className="app__skills-category-name">Other</h3>
-          <div className="app__skills-skill-group">
-            {skillsOther.map((skill) => (
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
-                className="app__skills-skill app__flex"
-                key={skill.name}
-              >
-                <div className="app__flex">
-                  <img src={skill.icon} alt={skill.name} />
-                </div>
-                <p className="app__skills-skill-name">{skill.name}</p>
-                <p className="app__skills-skill-level">{skill.level}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+        {skillCategories.map((category) => (
+          <motion.div className="app__skills-category" key={category.name}>
+            <h3 className="app__skills-category-name">{category.name}</h3>
+            <div className="app__skills-skill-group">
+              {category.skills.map((skill) => (
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="app__skills-skill"
+                  key={skill.name}
+                >
+                  <div className="app__skills-skill-icon app__flex">
+                    <img src={skill.icon} alt={skill.name} />
+                  </div>
+                  <div className="app__skills-skill-info">
+                    <p className="app__skills-skill-name">{skill.name}</p>
+                    <p className="app__skills-skill-level">{skill.level}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
     </>
   );
