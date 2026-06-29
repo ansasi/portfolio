@@ -1,9 +1,9 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+  // neutral dot-grid texture replaces the colour-tinted bgIMG.png
+  background-color: var(--primary-color);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 22px 22px;
 
   // the hero owns its own spacing — clear the wrapper defaults
   .app__wrapper {
@@ -129,7 +129,7 @@
   align-items: center;
   justify-content: center;
   padding: 0.9rem 1.75rem;
-  border-radius: 12px;
+  border-radius: var(--btn-radius);
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
@@ -161,22 +161,25 @@
 .app__header-btn--primary {
   background: var(--secondary-color);
   color: var(--white-color);
-  box-shadow: 0 10px 24px rgba(49, 59, 172, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 
   &:hover {
-    box-shadow: 0 14px 30px rgba(49, 59, 172, 0.38);
+    background: var(--secondary-hover);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.26);
   }
 }
 
 .app__header-btn--ghost {
   background: var(--white-color);
   color: var(--secondary-color);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--lightGray-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
 
   &:hover {
     background: var(--secondary-color);
     color: var(--white-color);
-    box-shadow: 0 14px 30px rgba(49, 59, 172, 0.28);
+    border-color: var(--secondary-color);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
   }
 }
 

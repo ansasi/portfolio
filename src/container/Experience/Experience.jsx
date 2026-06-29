@@ -34,10 +34,16 @@ const Experience = () => {
           <VerticalTimelineElement
             key={index}
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "#ffffff", color: "#000" }}
-            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
+            contentStyle={{
+              background: "var(--white-color)",
+              color: "var(--black-color)",
+              border: "1px solid var(--lightGray-color)",
+              boxShadow: "var(--card-shadow)",
+              borderRadius: "var(--card-radius)",
+            }}
+            contentArrowStyle={{ borderRight: "7px solid var(--white-color)" }}
             date={experience.date}
-            iconStyle={{ background: "#ffffff", color: "#000" }}
+            iconStyle={{ background: "var(--secondary-color)", color: "var(--white-color)" }}
             icon={getIcon(experience.company)}
           >
             <h3 className="vertical-timeline-element-title">{experience.name}</h3>

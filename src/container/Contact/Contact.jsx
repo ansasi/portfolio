@@ -72,37 +72,48 @@ const Contact = () => {
         </div> */}
       </div>
       {!isFormSubmitted ? (
-        <form className="app__contact-form app__flex" ref={form}>
-          <div className="app__flex">
+        <form className="app__contact-form" ref={form}>
+          <label className="app__contact-field" htmlFor="contact-name">
+            <span className="app__contact-label">Name</span>
             <input
+              id="contact-name"
               className="p-text"
               type="text"
-              placeholder="Your Name"
+              placeholder="Your name"
               name="name"
               value={name}
               onChange={handleChangeInput}
             />
-          </div>
-          <div className="app__flex">
+          </label>
+          <label className="app__contact-field" htmlFor="contact-email">
+            <span className="app__contact-label">Email</span>
             <input
+              id="contact-email"
               className="p-text"
               type="email"
-              placeholder="Your Email"
+              placeholder="you@example.com"
               name="email"
               value={email}
               onChange={handleChangeInput}
             />
-          </div>
-          <div>
+          </label>
+          <label className="app__contact-field" htmlFor="contact-message">
+            <span className="app__contact-label">Message</span>
             <textarea
+              id="contact-message"
               className="p-text"
-              placeholder="Your Message"
+              placeholder="Tell me about your project…"
               value={message}
               name="message"
               onChange={handleChangeInput}
             />
-          </div>
-          <button type="button" className="p-text" onClick={handleSubmit} disabled={loading}>
+          </label>
+          <button
+            type="button"
+            className="app__contact-btn"
+            onClick={handleSubmit}
+            disabled={loading}
+          >
             {!loading ? "Send Message" : "Sending..."}
           </button>
         </form>

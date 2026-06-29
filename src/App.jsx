@@ -1,6 +1,6 @@
 import { Toaster } from "react-hot-toast";
 
-import { About, Contact, Header, Skills, Experience, Portfolio } from "./container"; // Testimonial,
+import { About, Contact, Header, Skills, Experience, Portfolio } from "./container";
 import { Navbar, Footer, FloatingNavbar } from "./components";
 import "./App.scss";
 
@@ -13,7 +13,6 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
-      {/* <Testimonial /> */}
       <Experience />
       <Contact />
       <Footer />

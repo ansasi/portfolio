@@ -6,13 +6,13 @@ import { Settings } from "../constants/defaultData";
 
 const SocialMedia = () => (
   <div className="app__social">
-    <a href={Settings.linkedin} target="_blank" rel="noreferrer">
+    <a href={Settings.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
       <BsLinkedin />
     </a>
-    <a href={Settings.github} target="_blank" rel="noreferrer">
+    <a href={Settings.github} target="_blank" rel="noreferrer" aria-label="GitHub">
       <FaGithub />
     </a>
-    <a href={`mailto:${Settings.email}`}>
+    <a href={`mailto:${Settings.email}`} aria-label="Email">
       <FiMail />
     </a>
   </div>
