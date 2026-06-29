@@ -3,7 +3,7 @@
     {
       "title": "SheetGenius AI",
       "description": "SheetGenius AI is a web app that creates Excel formulas using natural language.",
-      "codeLink": "https://github.com/ansasi/sheetgenius",
+      "codeLink": "",
       "projectLink": "https://sheetgenius.vercel.app/",
       "image": "/portfolio/sheetgenius.jpg",
       "tags": ["AI", "Mobile App", "Web App", "Next JS", "React JS", "Stripe"]
@@ -17,20 +17,12 @@
       "tags": ["E-commerce", "Mobile App", "Web App", "Next JS", "React JS", "Stripe", "Sanity"]
     },
     {
-      "title": "Gym App",
-      "description": "A gym app with a variety of exercises. It uses Rapid API to fetch exercises and the related YouTube videos.",
-      "codeLink": "https://github.com/ansasi/fitness-react-app",
-      "projectLink": "https://ansasi.github.io/fitness-react-app/",
+      "title": "Fitness App",
+      "description": "A fitness exercise browser rebuilt with Astro, React 19 and Tailwind CSS. Search and filter 873 exercises, each with step-by-step instructions and an image carousel.",
+      "codeLink": "https://github.com/ansasi/fitness-app",
+      "projectLink": "",
       "image": "/portfolio/gym.jpg",
-      "tags": ["Sports", "Mobile App", "Web App", "React JS"]
-    },
-    {
-      "title": "Event App",
-      "description": "An events platform built with Next.js and TypeScript. Create and attend events with secure authentication, Stripe payments and server-side rendering for fast page loads.",
-      "codeLink": "https://github.com/ansasi/event-webapp",
-      "projectLink": "https://event-webapp.vercel.app",
-      "image": "/portfolio/event_app.jpg",
-      "tags": ["NextJS", "Web App", "TypeScript", "Auth", "Stripe"]
+      "tags": ["Sports", "Web App", "React JS", "Astro", "TypeScript", "Tailwind"]
     },
     {
       "title": "Social Media Website",
@@ -41,28 +33,20 @@
       "tags": ["Social Media", "Mobile App", "Web App", "React JS", "Sanity", "User Auth"]
     },
     {
-      "title": "Open AI Chat",
-      "description": "A GPT-powered chatbot built for my personal portfolio, showcasing conversational AI that handles a wide range of queries.",
-      "codeLink": "https://github.com/ansasi/open_ai_vanilla",
-      "projectLink": "",
-      "image": "/portfolio/openai_chat.jpg",
-      "tags": ["AI", "Chatbot", "Web App", "Vanilla JS", "Open AI"]
-    },
-    {
-      "title": "Core Construcciones Website",
-      "description": "Website for a construction company, rebuilt with Astro, Pages CMS, GitHub and Cloudflare Pages so the client can edit content directly.",
-      "codeLink": "https://github.com/ansasi/core_construcciones",
-      "projectLink": "https://ansasi.github.io/core_construcciones/",
-      "image": "/portfolio/core_construcciones.jpg",
-      "tags": ["Web App", "Astro", "Pages CMS", "Cloudflare"]
-    },
-    {
       "title": "Docker HomeLab",
       "description": "Collection of Docker Compose stacks I run on my HomeLab to self-host services. CI lints every compose file on push to keep the lab reproducible.",
       "codeLink": "https://github.com/ansasi/docker_containers",
       "projectLink": "",
       "image": "/portfolio/docker_containers.svg",
       "tags": ["DevOps", "Docker", "Self-hosted", "CI"]
+    },
+    {
+      "title": "Terraform AWS Modules",
+      "description": "A library of reusable Terraform modules for provisioning AWS infrastructure, written to standardize and version-control cloud deployments.",
+      "codeLink": "https://github.com/ansasi/terraform-aws-modules",
+      "projectLink": "",
+      "image": "/portfolio/terraform_aws.svg",
+      "tags": ["DevOps", "Terraform", "AWS", "IaC", "Cloud"]
     }
   ]
 }
