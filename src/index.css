@@ -19,3 +19,8 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
+/* offset anchor jumps so section headings clear the fixed navbar */
+html {
+  scroll-padding-top: 5rem;
+}
