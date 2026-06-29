@@ -15,18 +15,14 @@
   width: 100%;
   margin-top: 2rem;
 
-  // a full-width grid uses the available desktop space instead of
-  // clustering two cards in the middle
+  // a full-width 2x2 grid uses the available desktop space instead of
+  // clustering the cards in the middle
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 
   @media screen and (min-width: 2000px) {
     gap: 3rem;
-  }
-
-  @media screen and (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   @media screen and (max-width: 600px) {
@@ -42,12 +38,6 @@
   background-color: var(--primary-color);
   border-radius: 15px;
   padding: 1rem;
-
-  transition: box-shadow 0.3s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-  }
 
   img {
     width: 100%;

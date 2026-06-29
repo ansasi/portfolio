@@ -73,13 +73,6 @@
   padding: 0.5rem 0.6rem;
   border-radius: 10px;
 
-  transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
-
-  &:hover {
-    background-color: var(--white-color);
-    transform: translateX(4px);
-  }
-
   .app__skills-skill-icon {
     flex-shrink: 0;
     width: 48px;
