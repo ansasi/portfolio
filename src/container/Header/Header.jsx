@@ -42,14 +42,11 @@ const Header = () => (
           {Settings.extraTag && <p className="p-text">{Settings.extraTag}</p>}
         </div>
 
-        <div className="tag-cmp app__flex">
-          <a href={CV} download className="p-text">
+        <div className="app__header-cta">
+          <a href={CV} download className="app__header-btn app__header-btn--primary">
             Download my CV
           </a>
-        </div>
-
-        <div className="tag-cmp app__flex">
-          <a href="#contact" className="p-text">
+          <a href="#contact" className="app__header-btn app__header-btn--ghost">
             Let&apos;s talk
           </a>
         </div>
@@ -64,8 +61,7 @@ const Header = () => (
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: "easeInOut" }}
         src={images.profileAnsasiBg}
-        alt="profileAnsasiBg"
-        className="overlay_circle"
+        alt="Angel Sanchez Sierra"
       />
     </motion.div>
 
