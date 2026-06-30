@@ -15,10 +15,11 @@
 
   .app__portfolio-filter-item {
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    color: #000;
-    font-weight: 800;
+    border-radius: var(--btn-radius);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: 1px solid var(--lightGray-color);
+    font-weight: 700;
 
     cursor: pointer;
     transition: all 0.3s ease;
@@ -26,7 +27,13 @@
 
     &:hover {
       background-color: var(--secondary-color);
-      color: #fff;
+      border-color: var(--secondary-color);
+      color: var(--white-color);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--secondary-color);
+      outline-offset: 2px;
     }
 
     @media screen and (min-width: 2000px) {
@@ -37,43 +44,49 @@
 
   .item-active {
     background-color: var(--secondary-color);
-    color: #fff;
+    border-color: var(--secondary-color);
+    color: var(--white-color);
   }
 }
 
 .app__portfolio-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+
+  // responsive grid — fills the available desktop width instead of leaving
+  // big side gaps from the old `width: 40%` + margins approach
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
 
   .app__portfolio-item {
-    width: 40%;
+    width: 100%;
     flex-direction: column;
+    align-items: stretch;
 
-    margin: 2rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    color: #000;
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+    background-color: var(--white-color);
+    border: 1px solid var(--lightGray-color);
+    color: var(--black-color);
+    box-shadow: var(--card-shadow);
 
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      transform: translateY(-4px);
+      box-shadow: var(--card-shadow-hover);
     }
 
     @media screen and (min-width: 2000px) {
-      width: 470px;
-      padding: 1.25rem;
-      border-radius: 0.75rem;
+      padding: 1.5rem;
     }
+  }
 
-    @media screen and (max-width: 800px) {
-      width: 100%;
-      margin: 1rem;
-    }
+  @media screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
@@ -134,26 +147,41 @@
 }
 
 .app__portfolio-content {
-  padding: 0.5rem;
+  // top padding leaves room for the floating tag chip that straddles the
+  // image / content seam, so it no longer overlaps the title
+  padding: 1.5rem 0.5rem 0.5rem;
   width: 100%;
   position: relative;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  // full-width so title + description stay left-aligned regardless of the
+  // shared .app__flex `align-items: center`
+  > h4,
+  > .p-text {
+    width: 100%;
+  }
 
   h4 {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     line-height: 1.5;
-
-    @media screen and (min-width: 2000px) {
-      margin-top: 3rem;
-    }
   }
 
   .app__portfolio-tag {
     position: absolute;
+    top: -1.1rem;
+    right: 0.75rem;
 
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    background-color: #fff;
-    top: -25px;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    background-color: var(--white-color);
+    border: 1px solid var(--lightGray-color);
+    box-shadow: var(--card-shadow);
+
+    p {
+      font-weight: 600;
+      color: var(--black-color);
+    }
   }
 }

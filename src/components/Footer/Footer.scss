@@ -1,18 +1,17 @@
 .app__footer {
-  background: var(--color-primary);
+  background: var(--primary-color);
   padding: 1rem 1rem;
   text-align: center;
   margin-top: 2rem;
   a {
-    color: var(--color-bg);
+    color: var(--black-color);
     text-decoration: none;
   }
   .app__footer-logo {
-    color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(to right, #033392, #027add);
+    color: var(--black-color);
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: 0.05em;
     display: inline-block;
 
     img {
@@ -77,7 +76,7 @@
 
   .app__footer-copyright {
     margin-bottom: 2rem;
-    color: var(--color-bg);
+    color: var(--black-color);
     p {
       font-size: 1rem;
       color: var(--gray-color);

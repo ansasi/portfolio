@@ -3,14 +3,27 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
+  /* Soft monochrome palette — off-white canvas, near-black ink, black accent.
+     Photos / screenshots stay full colour; everything else is greyscale. */
+  --primary-color: #fafafa;
+  --secondary-color: #111111;
+  --secondary-hover: #000000;
+  --black-color: #111111;
+  --lightGray-color: #e5e5e5;
+  --gray-color: #71717a;
   --brown-color: #46364a;
   --white-color: #ffffff;
   --light-color: rgba(255, 255, 255, 0.6);
+
+  /* neutral tint for tinted card backgrounds (the only "fill" colour) */
+  --card-color: #f4f4f5;
+
+  /* shared card / button tokens so radius, shadow and padding stay consistent */
+  --card-radius: 14px;
+  --card-padding: 1.25rem;
+  --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --btn-radius: 12px;
 }
 
 * {
