@@ -9,14 +9,6 @@
       "tags": ["AI", "Mobile App", "Web App", "Next JS", "React JS", "Stripe"]
     },
     {
-      "title": "E-commerce Website",
-      "description": "A website created with Next.JS, Stripe and Sanity. It simulates an e-commerce store in which you can validate payments with Stripe.",
-      "codeLink": "https://github.com/ansasi/ecommerce-stripe-sanity",
-      "projectLink": "https://ecommerce-ansasi.vercel.app/",
-      "image": "/portfolio/ecommerce.jpg",
-      "tags": ["E-commerce", "Mobile App", "Web App", "Next JS", "React JS", "Stripe", "Sanity"]
-    },
-    {
       "title": "Fitness App",
       "description": "A focused exercise library (Forge) built with Astro, React 19 and Tailwind CSS. Filter 873 exercises by muscle, equipment and level, each with step-by-step instructions and reference imagery.",
       "codeLink": "https://github.com/ansasi/fitness-app",
