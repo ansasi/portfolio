@@ -9,7 +9,7 @@
     },
     {
       "name": "Data Engineer",
-      "company": "DataCentric",
+      "company": "Accumin",
       "date": "DEC 2022 - MAY 2023",
       "desc": "Designed, deployed and maintained AWS infrastructure for the company and its clients using Terraform and Python. Worked daily with Docker, EC2, VPCs and supporting services to automate and standardize data processes, using Terraform for IaC and Python for Spark-based ETL code.",
       "order": 2

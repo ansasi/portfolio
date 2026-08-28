@@ -14,7 +14,7 @@ const Experience = () => {
     switch (company) {
       case "Amazon":
         return <FaAmazon />;
-      case "DataCentric":
+      case "Accumin":
         return <GiBrain />;
       case "Alpiq":
         return <FaMountain />;
